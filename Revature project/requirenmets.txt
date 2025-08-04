@@ -1,0 +1,9 @@
+pandas 
+numpy
+requests
+datetime
+random
+os
+google.cloud
+google.oauth2
+warnings
