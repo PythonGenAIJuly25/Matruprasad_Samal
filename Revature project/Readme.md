@@ -1,10 +1,10 @@
-# 📦 Supply Chain Data Integration System
+#  Supply Chain Data Integration System
 
 A full-stack data integration and analytics project that combines sales, customer, and inventory data into a centralized warehouse using **BigQuery star schema** and delivers visual insights through a **Streamlit dashboard**.
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This project demonstrates how to:
 - Clean and transform raw supply chain data from CSV and API
@@ -12,7 +12,7 @@ This project demonstrates how to:
 - Build a real-time dashboard for KPIs, inventory trends, and performance
 
         
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 | Layer              | Tech Stack                         |
 |--------------------|------------------------------------|
@@ -24,13 +24,13 @@ This project demonstrates how to:
 
 ---
 
-## 📚 Star Schema Design
+##  Star Schema Design
 
-### 🟦 Fact Tables:
+###  Fact Tables:
 - `fact_orders`: order_id, order_date, sales, profit, return_flag, etc.
 - `fact_inventory`: product_id, date, inventory_level, stockouts, restock
 
-### 🟩 Dimension Tables:
+###  Dimension Tables:
 - `dim_product`: product_id, name, category, price
 - `dim_customer`: customer_id, segment, region, market
 - `dim_time`: date, year, month, weekday, etc.
@@ -40,7 +40,7 @@ This project demonstrates how to:
 
 ---
 
-## 🔄 ETL Flow
+##  ETL Flow
 
 1. **Load** CSVs + API data (`train.csv`, Fake Store)
 2. **Clean + enrich** orders, simulate inventory
@@ -50,7 +50,7 @@ This project demonstrates how to:
 
 ---
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
 - KPIs: Total Sales, Avg Order Value, On-time Delivery
 - Filter Panel: Segment, Sub-Category, Region, Ship Mode, Date Range
@@ -64,3 +64,4 @@ Run the dashboard:
 ```bash
 cd dashboard
 streamlit run app.py
+
